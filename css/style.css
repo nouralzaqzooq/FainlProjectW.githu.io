@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+
+
+ html, body {
+      height: 100%;
+      margin: 5px 0px;
+      direction: rtl;
+    }
+
+.hero {
+   height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+             /* url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");*/
+              /* url("/assets/images/pec1.jpeg"); */
+              url("../assets/images/palestine4.jpg");
+  background-size: cover;
+   background-position: center;
+      color: rgb(255, 255, 255);
+}
+
+body {
+  background: url(../assets/images/bodybg2.jpg);    /*   الخلفية صورة    */
+  /* background-color: #979797;*/  /*   الخلفية لون    */
+    clear: both;
+   /* font-family: Arial, Helvetica, sans-serif; */
+   /* font-family: Arial, Cairo, sans-serif; */
+   font-family: 'Cairo', Arial, sans-serif;
+   
+   font-size: 17px; 
+} 
+
+header {
+   margin: 20px auto;
+  background-color: #46c44c;
+  color: white;
+  padding: 25px;
+  text-align: center;
+ max-width: 900px; /*  هاد الحجم عششان تصغير المتصفح او مثلا فتحه عموبايل   */
+  width: 100%;
+ border-radius: 20px;
+
+}
+
+p {
+  text-align: justify;/*  عشان الاسطر تصير متساوية عالطرفين في الفقرات  */
+}
+
+/*   services   */
+.services {
+ 
+  display: flex;
+  gap: 40px; /* مسافة بين الخدمات */
+  flex-wrap: wrap; /*السماح للعناصر بالانتقال إلى سطر جديد إذا ما كان في مساحة كافية*/
+  justify-content: center;
+  margin-top: 40px;
+  cursor: pointer;  /********   لتغير شكل الفارة لليد    ********/
+}
+
+.service {
+  background-color: #c5dde9;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.services p{
+  text-align: center; /****ما بدي فقرات السيرفس يكونو كباقي الفقرات يمين ويسار بدي اياهم بالسنتر او الوسط ****/
+}
+
+.service i {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.story-card {
+  background-color: white;
+  padding: 22px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+  width: 100%;
+  max-width: 900px;    /*  هاد الحجم عششان تصغير المتصفح او مثلا فتحه عموبايل   */
+  /* line-height: 1.8; */  /*    لتباعد الاسطر    */
+
+  /* max-width: 800px; 
+  min-height: 300px;
+  width: 100%; */
+
+}
+
+header h1 {
+  margin-bottom: 15px;  /* مسافة بين العنوان والقائمة */
+  font-size: 2rem;      /* حجم الخط أكبر قليلاً */
+}
+
+button{
+    background-color: rgb(228, 100, 100);
+    border-radius: 20%;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;/*    لتتحول الفارة على شكل يد */
+}
+
+button:hover {
+  background-color: rgb(187, 56, 56);
+}
+
+a{
+     text-decoration:none;
+ }
+
+header ul {
+  list-style: none;       /* إزالة النقط */
+  padding: 0;             /* إزالة المسافات الداخلية */
+  margin: 0;              /* إزالة الهامش */
+  display: flex;          /* جعل العناصر أفقية */
+  justify-content: center;
+  gap: 20px;              /* المسافة بين العناصر */
+  direction: rtl;  /* RTL للقوائم */
+}
+
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+
+a:link, a:visited {
+    color: #a11505;  /*لون الرابط عن الزيارة*/
+ }
+a:hover, a:active{
+    color: #fdfbfb;   /* لون الرابط عند ميكون الفارة عليه او عند الضغط */
+ }   
+ 
+.story-card iframe, .story-card video {
+  width: 100%;
+  aspect-ratio: 16/9;  /* عشان احافظ ع نسبة الفيديو */
+  margin-top: 10px;
+}
+
+ 
+/*********************************** */
+/****    مش لازم لانو مش حلو     ****/
+ /* .container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+} */
+/*** للازرار ***/
+#counter {  /*  تبع الصامدون  */
+  display: flex;
+justify-content: center;
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #27ae60;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.message {
+  margin: 20px auto;
+  width: 400px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+.buttons {
+      text-align: center;
+      margin-bottom: 30px;
+}
+
+.buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff0800;
+      transition: background-color 0.3s;
+      width: 50%;
+      color: white;
+      cursor: pointer;    
+}
+
+.buttons button:hover {
+      background-color: #0252a7;
+}
+/*************   البحث عن قصة    ********************/
+#searchInput{
+width:50%;
+ margin:20px auto; 
+ display:block; 
+ padding:10px
+}
+/*******************stories****************/
+.stories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 2%;
+}
+.stories p {
+  text-align: center; /*  ما بدي فقرات الستوريز يكونو كباقي الفقرات يمين ويسار بدي اياهم بالسنتر او الوسط  */
+}
+
+.story-card strong {
+  color: #000000;
+  /* background-color: #fc7d5e;  /  كنت دعمل لون بخلفية لكن بدونها انعم  /
+  padding: 3px; */
+}
+
+.story {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); للخيال او الظل */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      text-align: center;
+      transition: transform 0.3s;
+}
+
+.story:hover {
+      transform: scale(1.05);
+}
+
+
+.story h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333;
+}
+
+.story p {
+      font-size: 14px;
+      color: #666;
+}
+
+/***********   العناوين ب تواصل معنا    ***********/
+.form-label{
+  color: #fcf9f9;
+background-color: #32a532;
+border-radius: 10px;
+padding: 2%;
+}
+
+#contact{
+  margin-bottom: 9px;       
+}
+
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* المسافة بين الصور */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  overflow: hidden; /* يخفي أي جزء زائد عن الإطار */
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s; /* تأثير Hover */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تجعل الصورة تغطي الإطار بالكامل */
+  transition: transform 0.3s;
+}
+
+/* تأثير Hover */
+.gallery-item:hover img {
+  transform: scale(1.1); /* تكبير الصورة قليلاً عند المرور */
+}
+
+.gallery-item:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ====================slider====================== */
+/* .slider {
+  margin: 2px;
+  width:500px;
+  border: 1px solid blue;
+   margin: 50px auto;
+}
+
+.slide {
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  border: 1px solid blue;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  display: n;
+  
+}
+.prev, .next {
+  width: 40px;
+  margin-top: 150px;
+}
+
+.slide .show {
+  display: inline-block;
+} */
+/****************************************************/
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+
+/* أزرار السابق / التالي */
+.slider .prev,
+.slider .next {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* حاوية الصور */
+.slider .slide {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* الصور */
+.slider .slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* الصورة الظاهرة */
+.slider .slide img.show {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+
+  .slider .slide {
+    height: 260px;
+  }
+
+  .slider .prev,
+  .slider .next {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* ==========  footer  ===========  */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #4c93af;
+}
+
+.footer p, .footer ul li, .footer a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;  
+  /************* كن بدي اوضحهم اكتر بس  بدونها احلى وارتب    **************/
+  /* background-color: #4c93af ;
+  width: 20%;
+  border-radius: 50%;
+  padding: 5%; */
+}
+
+.footer a:hover {
+  color: #036406;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #4CAF50;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  font-size: 13px;
+}
+
+hr {
+  border-color: #444;
+  margin: 20px 0;
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a11505;
+  cursor: pointer;
+ margin-top: 16px;
+  padding: 4px;
+
+}
+
+
+
+
+
+
+
+
+
