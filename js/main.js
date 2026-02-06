@@ -51,32 +51,6 @@ function showMessage() {
  }
 
 
-///////////////////////////JS/ بحث فوري داخل قائمة/بطاقات //////////////////////////////
-document.getElementById("searchInput").addEventListener("keyup", function () {
-  const value = this.value.toLowerCase();
-  const stories = document.querySelectorAll(".story");
-
-  stories.forEach(function (story) {
-    const text = story.innerText.toLowerCase();
-    story.style.display = text.includes(value) ? "block" : "none";
-  });
-});
-
-
-////////////////////// فلترة القصص /////////////////////////
-$(document).ready(function() {
-  $('.buttons button').click(function() {
-    const filter = $(this).data('filter');
-
-    if (filter === 'all') {
-      $('.story').show();
-    } else {
-      $('.story').hide();
-      $('.story').filter(`[data-category="${filter}"]`).show();
-    }
-  });
-});
-
 //========slader===============
 
 $(document).ready(function () {
@@ -107,6 +81,52 @@ $(document).ready(function () {
     });
 
 });
+
+////////////////////////// رسالة نجاح التواصل /////////////////////////////////
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // منع الإرسال الافتراضي للصفحة
+    // إفراغ حقول النموذج
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+
+    // عند النجاح في إرسال البيانات:
+    const formMessage = document.getElementById('formMessage');
+    formMessage.style.display = 'block'; // إظهار رسالة النجاح
+
+    // إخفاء الرسالة تلقائياً بعد 4 ثوانٍ 
+    setTimeout(() => {
+        formMessage.style.display = 'none';
+    }, 4000); //   4 ثواني
+});
+///////////////////////////JS/ بحث فوري داخل قائمة/بطاقات //////////////////////////////
+document.getElementById("searchInput").addEventListener("keyup", function () {
+  const value = this.value.toLowerCase();
+  const stories = document.querySelectorAll(".story");
+
+  stories.forEach(function (story) {
+    const text = story.innerText.toLowerCase();
+    story.style.display = text.includes(value) ? "block" : "none";
+  });
+});
+
+
+////////////////////// فلترة القصص /////////////////////////
+$(document).ready(function() {
+  $('.buttons button').click(function() {
+    const filter = $(this).data('filter');
+
+    if (filter === 'all') {
+      $('.story').show();
+    } else {
+      $('.story').hide();
+      $('.story').filter(`[data-category="${filter}"]`).show();
+    }
+  });
+});
+
+
+
 
 
 
