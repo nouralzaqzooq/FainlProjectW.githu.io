@@ -116,18 +116,6 @@ header h1 {
   font-size: 2rem;      /* حجم الخط أكبر قليلاً */
 }
 
-button{
-    background-color: rgb(228, 100, 100);
-    border-radius: 20%;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;/*    لتتحول الفارة على شكل يد */
-}
-
-button:hover {
-  background-color: rgb(187, 56, 56);
-}
-
 a{
      text-decoration:none;
  }
@@ -468,6 +456,7 @@ hr {
   padding: 4px;
 
 }
+
 
 
 
