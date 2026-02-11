@@ -50,6 +50,7 @@ p {
 
 header h1 {
   margin-bottom: 15px;  /* مسافة بين العنوان والقائمة */
+    font-size: 35px;
 }
 
 a{
@@ -437,6 +438,7 @@ hr {
   border-color: #444;
   margin: 20px 0;
 }
+
 
 
 
