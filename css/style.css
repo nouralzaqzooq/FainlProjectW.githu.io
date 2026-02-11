@@ -53,6 +53,42 @@ p {
   text-align: justify;/*  عشان الاسطر تصير متساوية عالطرفين في الفقرات  */
 }
 
+
+header h1 {
+  margin-bottom: 15px;  /* مسافة بين العنوان والقائمة */
+  font-size: 2rem;      /* حجم الخط أكبر قليلاً */
+}
+
+a{
+     text-decoration:none;
+ }
+
+header ul {
+  list-style: none;       /* إزالة النقط */
+  padding: 0;             /* إزالة المسافات الداخلية */
+  margin: 0;              /* إزالة الهامش */
+  display: flex;          /* جعل العناصر أفقية */
+  justify-content: center;
+  gap: 20px;              /* المسافة بين العناصر */
+  direction: rtl;  /* RTL للقوائم */
+}
+
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+
+a:link, a:visited {
+    color: #a11505;  /*لون الرابط عن الزيارة*/
+ }
+a:hover, a:active{
+    color: #fdfbfb;   /* لون الرابط عند ميكون الفارة عليه او عند الضغط */
+ }   
+
 /*   services   */
 .services {
  
@@ -103,49 +139,11 @@ p {
   /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
   width: 100%;
   max-width: 900px;    /*  هاد الحجم عششان تصغير المتصفح او مثلا فتحه عموبايل   */
+  min-height: 300px
   /* line-height: 1.8; */  /*    لتباعد الاسطر    */
-
-  /* max-width: 800px; 
-  min-height: 300px;
-  width: 100%; */
-
-}
-
-header h1 {
-  margin-bottom: 15px;  /* مسافة بين العنوان والقائمة */
-  font-size: 2rem;      /* حجم الخط أكبر قليلاً */
-}
-
-a{
-     text-decoration:none;
- }
-
-header ul {
-  list-style: none;       /* إزالة النقط */
-  padding: 0;             /* إزالة المسافات الداخلية */
-  margin: 0;              /* إزالة الهامش */
-  display: flex;          /* جعل العناصر أفقية */
-  justify-content: center;
-  gap: 20px;              /* المسافة بين العناصر */
-  direction: rtl;  /* RTL للقوائم */
 }
 
 
-header ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 5px 10px;
-}
-
-
-a:link, a:visited {
-    color: #a11505;  /*لون الرابط عن الزيارة*/
- }
-a:hover, a:active{
-    color: #fdfbfb;   /* لون الرابط عند ميكون الفارة عليه او عند الضغط */
- }   
- 
 .story-card iframe, .story-card video {
   width: 100%;
   aspect-ratio: 16/9;  /* عشان احافظ ع نسبة الفيديو */
@@ -400,11 +398,6 @@ padding: 2%;
 
 .footer ul li {
   margin-bottom: 10px;  
-  /************* كن بدي اوضحهم اكتر بس  بدونها احلى وارتب    **************/
-  /* background-color: #4c93af ;
-  width: 20%;
-  border-radius: 50%;
-  padding: 5%; */
 }
 
 .footer a:hover {
@@ -456,15 +449,6 @@ hr {
   padding: 4px;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
