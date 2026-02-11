@@ -83,6 +83,7 @@ a:hover, a:active{
     color: #fdfbfb;   /* لون الرابط عند ميكون الفارة عليه او عند الضغط */
  }   
 
+ /******     تبعت اهلا بكم بالموقع    *******/
  #title{
   color: #6e0202;
   text-align: center;
@@ -437,6 +438,7 @@ hr {
   border-color: #444;
   margin: 20px 0;
 }
+
 
 
 
